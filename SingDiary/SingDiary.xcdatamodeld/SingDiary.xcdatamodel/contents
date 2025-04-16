@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LessonNote" representedClassName="LessonNote" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="homework" optional="YES" attributeType="String"/>
+        <attribute name="imageURL" optional="YES" attributeType="URI"/>
+        <attribute name="mediaType" optional="YES" attributeType="String"/>
+        <attribute name="recordingURL" optional="YES" attributeType="URI"/>
+        <attribute name="teacher" optional="YES" attributeType="String"/>
+        <attribute name="videoURL" optional="YES" attributeType="URI"/>
+    </entity>
+    <entity name="PracticeEntry" representedClassName="PracticeEntry" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="durationMinutes" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="hasVideo" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="imageURL" optional="YES" attributeType="URI"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="mediaType" optional="YES" attributeType="String"/>
+        <attribute name="mediaURLs" optional="YES" attributeType="Transformable"/>
+        <attribute name="mood" optional="YES" attributeType="String"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="recordingURL" optional="YES" attributeType="URI"/>
+        <attribute name="skills" optional="YES" attributeType="Transformable"/>
+        <attribute name="songTitle" optional="YES" attributeType="String"/>
+        <attribute name="videoURL" optional="YES" attributeType="URI"/>
+    </entity>
+</model>

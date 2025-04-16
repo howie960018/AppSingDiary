@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95E2A13E2DAF74AE00DCEE58 /* SingDiaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A13D2DAF74AE00DCEE58 /* SingDiaryApp.swift */; };
+		95E2A1402DAF74AE00DCEE58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A13F2DAF74AE00DCEE58 /* ContentView.swift */; };
+		95E2A1422DAF74B000DCEE58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E2A1412DAF74B000DCEE58 /* Assets.xcassets */; };
+		95E2A1452DAF74B000DCEE58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E2A1442DAF74B000DCEE58 /* Preview Assets.xcassets */; };
+		95E2A1472DAF74B000DCEE58 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1462DAF74B000DCEE58 /* Persistence.swift */; };
+		95E2A14A2DAF74B000DCEE58 /* SingDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1482DAF74B000DCEE58 /* SingDiary.xcdatamodeld */; };
+		95E2A1512DAF75B700DCEE58 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1502DAF75B700DCEE58 /* DiaryView.swift */; };
+		95E2A1532DAF75E200DCEE58 /* LessonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1522DAF75E200DCEE58 /* LessonsView.swift */; };
+		95E2A1552DAF761B00DCEE58 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1542DAF761B00DCEE58 /* SettingsView.swift */; };
+		95E2A1572DAF763F00DCEE58 /* PracticeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1562DAF763F00DCEE58 /* PracticeProgressView.swift */; };
+		95E2A1592DAF794800DCEE58 /* AddLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1582DAF794800DCEE58 /* AddLessonView.swift */; };
+		95E2A15B2DAF7D0300DCEE58 /* AddPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A15A2DAF7D0300DCEE58 /* AddPracticeView.swift */; };
+		95E2A15D2DAF7D9000DCEE58 /* PracticeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A15C2DAF7D9000DCEE58 /* PracticeDetailView.swift */; };
+		95E2A15F2DAF7F3900DCEE58 /* EditPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A15E2DAF7F3900DCEE58 /* EditPracticeView.swift */; };
+		95E2A1612DAF7F6300DCEE58 /* EditLessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1602DAF7F6300DCEE58 /* EditLessonView.swift */; };
+		95E2A1632DAF7FE100DCEE58 /* LessonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1622DAF7FE100DCEE58 /* LessonDetailView.swift */; };
+		95E2A16D2DAF829400DCEE58 /* PermissionsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A16C2DAF829400DCEE58 /* PermissionsInfoView.swift */; };
+		95E2A1802DB1598800DCEE58 /* ImagePicker .swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A17F2DB1598800DCEE58 /* ImagePicker .swift */; };
+		95E2A1822DB15EE200DCEE58 /* MediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1812DB15EE200DCEE58 /* MediaPicker.swift */; };
+		95E2A1842DB15F0300DCEE58 /* VideoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1832DB15F0300DCEE58 /* VideoUtils.swift */; };
+		95E2A1882DB1653800DCEE58 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1872DB1653800DCEE58 /* VideoPlayerView.swift */; };
+		95E2A1902DB167B900DCEE58 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A1892DB167B800DCEE58 /* AudioPlayerService.swift */; };
+		95E2A1922DB167B900DCEE58 /* PhotoPicker .swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A18B2DB167B900DCEE58 /* PhotoPicker .swift */; };
+		95E2A1932DB167B900DCEE58 /* VideoRecorderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A18C2DB167B900DCEE58 /* VideoRecorderService.swift */; };
+		95E2A1942DB167B900DCEE58 /* MediaPickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A18D2DB167B900DCEE58 /* MediaPickerService.swift */; };
+		95E2A1952DB167B900DCEE58 /* VideoThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A18E2DB167B900DCEE58 /* VideoThumbnailView.swift */; };
+		95E2A19C2DB3403000DCEE58 /* MultiMediaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A19B2DB3403000DCEE58 /* MultiMediaManager.swift */; };
+		95E2A19E2DB341F800DCEE58 /* AudioRecorderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A19D2DB341F800DCEE58 /* AudioRecorderService.swift */; };
+		95E2A1A02DB342C000DCEE58 /* AudioRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E2A19F2DB342C000DCEE58 /* AudioRecorderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95E2A13A2DAF74AE00DCEE58 /* SingDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E2A13D2DAF74AE00DCEE58 /* SingDiaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingDiaryApp.swift; sourceTree = "<group>"; };
+		95E2A13F2DAF74AE00DCEE58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		95E2A1412DAF74B000DCEE58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95E2A1442DAF74B000DCEE58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95E2A1462DAF74B000DCEE58 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		95E2A1492DAF74B000DCEE58 /* SingDiary.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SingDiary.xcdatamodel; sourceTree = "<group>"; };
+		95E2A1502DAF75B700DCEE58 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		95E2A1522DAF75E200DCEE58 /* LessonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsView.swift; sourceTree = "<group>"; };
+		95E2A1542DAF761B00DCEE58 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		95E2A1562DAF763F00DCEE58 /* PracticeProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeProgressView.swift; sourceTree = "<group>"; };
+		95E2A1582DAF794800DCEE58 /* AddLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLessonView.swift; sourceTree = "<group>"; };
+		95E2A15A2DAF7D0300DCEE58 /* AddPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPracticeView.swift; sourceTree = "<group>"; };
+		95E2A15C2DAF7D9000DCEE58 /* PracticeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeDetailView.swift; sourceTree = "<group>"; };
+		95E2A15E2DAF7F3900DCEE58 /* EditPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPracticeView.swift; sourceTree = "<group>"; };
+		95E2A1602DAF7F6300DCEE58 /* EditLessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLessonView.swift; sourceTree = "<group>"; };
+		95E2A1622DAF7FE100DCEE58 /* LessonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonDetailView.swift; sourceTree = "<group>"; };
+		95E2A16C2DAF829400DCEE58 /* PermissionsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsInfoView.swift; sourceTree = "<group>"; };
+		95E2A1702DAFD3C200DCEE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95E2A17F2DB1598800DCEE58 /* ImagePicker .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImagePicker .swift"; sourceTree = "<group>"; };
+		95E2A1812DB15EE200DCEE58 /* MediaPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPicker.swift; sourceTree = "<group>"; };
+		95E2A1832DB15F0300DCEE58 /* VideoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUtils.swift; sourceTree = "<group>"; };
+		95E2A1872DB1653800DCEE58 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		95E2A1892DB167B800DCEE58 /* AudioPlayerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		95E2A18B2DB167B900DCEE58 /* PhotoPicker .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoPicker .swift"; sourceTree = "<group>"; };
+		95E2A18C2DB167B900DCEE58 /* VideoRecorderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRecorderService.swift; sourceTree = "<group>"; };
+		95E2A18D2DB167B900DCEE58 /* MediaPickerService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPickerService.swift; sourceTree = "<group>"; };
+		95E2A18E2DB167B900DCEE58 /* VideoThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoThumbnailView.swift; sourceTree = "<group>"; };
+		95E2A19B2DB3403000DCEE58 /* MultiMediaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiMediaManager.swift; sourceTree = "<group>"; };
+		95E2A19D2DB341F800DCEE58 /* AudioRecorderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderService.swift; sourceTree = "<group>"; };
+		95E2A19F2DB342C000DCEE58 /* AudioRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95E2A1372DAF74AE00DCEE58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95E2A1312DAF74AE00DCEE58 = {
+			isa = PBXGroup;
+			children = (
+				95E2A13C2DAF74AE00DCEE58 /* SingDiary */,
+				95E2A13B2DAF74AE00DCEE58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95E2A13B2DAF74AE00DCEE58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95E2A13A2DAF74AE00DCEE58 /* SingDiary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95E2A13C2DAF74AE00DCEE58 /* SingDiary */ = {
+			isa = PBXGroup;
+			children = (
+				95E2A17F2DB1598800DCEE58 /* ImagePicker .swift */,
+				95E2A13D2DAF74AE00DCEE58 /* SingDiaryApp.swift */,
+				95E2A13F2DAF74AE00DCEE58 /* ContentView.swift */,
+				95E2A1412DAF74B000DCEE58 /* Assets.xcassets */,
+				95E2A1462DAF74B000DCEE58 /* Persistence.swift */,
+				95E2A1482DAF74B000DCEE58 /* SingDiary.xcdatamodeld */,
+				95E2A1432DAF74B000DCEE58 /* Preview Content */,
+				95E2A1502DAF75B700DCEE58 /* DiaryView.swift */,
+				95E2A1522DAF75E200DCEE58 /* LessonsView.swift */,
+				95E2A1542DAF761B00DCEE58 /* SettingsView.swift */,
+				95E2A1562DAF763F00DCEE58 /* PracticeProgressView.swift */,
+				95E2A1582DAF794800DCEE58 /* AddLessonView.swift */,
+				95E2A15A2DAF7D0300DCEE58 /* AddPracticeView.swift */,
+				95E2A15C2DAF7D9000DCEE58 /* PracticeDetailView.swift */,
+				95E2A15E2DAF7F3900DCEE58 /* EditPracticeView.swift */,
+				95E2A1602DAF7F6300DCEE58 /* EditLessonView.swift */,
+				95E2A1622DAF7FE100DCEE58 /* LessonDetailView.swift */,
+				95E2A16C2DAF829400DCEE58 /* PermissionsInfoView.swift */,
+				95E2A1702DAFD3C200DCEE58 /* Info.plist */,
+				95E2A1812DB15EE200DCEE58 /* MediaPicker.swift */,
+				95E2A1832DB15F0300DCEE58 /* VideoUtils.swift */,
+				95E2A1872DB1653800DCEE58 /* VideoPlayerView.swift */,
+				95E2A1892DB167B800DCEE58 /* AudioPlayerService.swift */,
+				95E2A18D2DB167B900DCEE58 /* MediaPickerService.swift */,
+				95E2A18B2DB167B900DCEE58 /* PhotoPicker .swift */,
+				95E2A18C2DB167B900DCEE58 /* VideoRecorderService.swift */,
+				95E2A18E2DB167B900DCEE58 /* VideoThumbnailView.swift */,
+				95E2A19B2DB3403000DCEE58 /* MultiMediaManager.swift */,
+				95E2A19D2DB341F800DCEE58 /* AudioRecorderService.swift */,
+				95E2A19F2DB342C000DCEE58 /* AudioRecorderView.swift */,
+			);
+			path = SingDiary;
+			sourceTree = "<group>";
+		};
+		95E2A1432DAF74B000DCEE58 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				95E2A1442DAF74B000DCEE58 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95E2A1392DAF74AE00DCEE58 /* SingDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E2A14D2DAF74B000DCEE58 /* Build configuration list for PBXNativeTarget "SingDiary" */;
+			buildPhases = (
+				95E2A1362DAF74AE00DCEE58 /* Sources */,
+				95E2A1372DAF74AE00DCEE58 /* Frameworks */,
+				95E2A1382DAF74AE00DCEE58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingDiary;
+			productName = SingDiary;
+			productReference = 95E2A13A2DAF74AE00DCEE58 /* SingDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95E2A1322DAF74AE00DCEE58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					95E2A1392DAF74AE00DCEE58 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 95E2A1352DAF74AE00DCEE58 /* Build configuration list for PBXProject "SingDiary" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95E2A1312DAF74AE00DCEE58;
+			productRefGroup = 95E2A13B2DAF74AE00DCEE58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95E2A1392DAF74AE00DCEE58 /* SingDiary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95E2A1382DAF74AE00DCEE58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E2A1452DAF74B000DCEE58 /* Preview Assets.xcassets in Resources */,
+				95E2A1422DAF74B000DCEE58 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95E2A1362DAF74AE00DCEE58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E2A1552DAF761B00DCEE58 /* SettingsView.swift in Sources */,
+				95E2A1612DAF7F6300DCEE58 /* EditLessonView.swift in Sources */,
+				95E2A19C2DB3403000DCEE58 /* MultiMediaManager.swift in Sources */,
+				95E2A15F2DAF7F3900DCEE58 /* EditPracticeView.swift in Sources */,
+				95E2A1512DAF75B700DCEE58 /* DiaryView.swift in Sources */,
+				95E2A14A2DAF74B000DCEE58 /* SingDiary.xcdatamodeld in Sources */,
+				95E2A1592DAF794800DCEE58 /* AddLessonView.swift in Sources */,
+				95E2A1902DB167B900DCEE58 /* AudioPlayerService.swift in Sources */,
+				95E2A1932DB167B900DCEE58 /* VideoRecorderService.swift in Sources */,
+				95E2A16D2DAF829400DCEE58 /* PermissionsInfoView.swift in Sources */,
+				95E2A1942DB167B900DCEE58 /* MediaPickerService.swift in Sources */,
+				95E2A19E2DB341F800DCEE58 /* AudioRecorderService.swift in Sources */,
+				95E2A1822DB15EE200DCEE58 /* MediaPicker.swift in Sources */,
+				95E2A1A02DB342C000DCEE58 /* AudioRecorderView.swift in Sources */,
+				95E2A1882DB1653800DCEE58 /* VideoPlayerView.swift in Sources */,
+				95E2A1472DAF74B000DCEE58 /* Persistence.swift in Sources */,
+				95E2A15B2DAF7D0300DCEE58 /* AddPracticeView.swift in Sources */,
+				95E2A1842DB15F0300DCEE58 /* VideoUtils.swift in Sources */,
+				95E2A1402DAF74AE00DCEE58 /* ContentView.swift in Sources */,
+				95E2A1632DAF7FE100DCEE58 /* LessonDetailView.swift in Sources */,
+				95E2A1572DAF763F00DCEE58 /* PracticeProgressView.swift in Sources */,
+				95E2A1802DB1598800DCEE58 /* ImagePicker .swift in Sources */,
+				95E2A15D2DAF7D9000DCEE58 /* PracticeDetailView.swift in Sources */,
+				95E2A1922DB167B900DCEE58 /* PhotoPicker .swift in Sources */,
+				95E2A1952DB167B900DCEE58 /* VideoThumbnailView.swift in Sources */,
+				95E2A1532DAF75E200DCEE58 /* LessonsView.swift in Sources */,
+				95E2A13E2DAF74AE00DCEE58 /* SingDiaryApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95E2A14B2DAF74B000DCEE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SingDiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95E2A14C2DAF74B000DCEE58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SingDiary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95E2A14E2DAF74B000DCEE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SingDiary/Preview Content\"";
+				DEVELOPMENT_TEAM = SLVC5X7592;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.SingDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95E2A14F2DAF74B000DCEE58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SingDiary/Preview Content\"";
+				DEVELOPMENT_TEAM = SLVC5X7592;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.SingDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95E2A1352DAF74AE00DCEE58 /* Build configuration list for PBXProject "SingDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E2A14B2DAF74B000DCEE58 /* Debug */,
+				95E2A14C2DAF74B000DCEE58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E2A14D2DAF74B000DCEE58 /* Build configuration list for PBXNativeTarget "SingDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E2A14E2DAF74B000DCEE58 /* Debug */,
+				95E2A14F2DAF74B000DCEE58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		95E2A1482DAF74B000DCEE58 /* SingDiary.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				95E2A1492DAF74B000DCEE58 /* SingDiary.xcdatamodel */,
+			);
+			currentVersion = 95E2A1492DAF74B000DCEE58 /* SingDiary.xcdatamodel */;
+			path = SingDiary.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 95E2A1322DAF74AE00DCEE58 /* Project object */;
+}
